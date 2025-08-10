@@ -1,5 +1,5 @@
 # Image Sharpening using Knowledge Distillation
-📌 Overview
+Overview :
 This project focuses on enhancing image sharpness for real-time applications such as video conferencing, mobile photography, and low-bandwidth streaming.
 It implements a Teacher–Student Knowledge Distillation framework, where:
 
@@ -9,7 +9,7 @@ Student Model: A lightweight CNN-based network designed for real-time execution
 
 The student model learns from the teacher to replicate its image restoration capabilities while requiring significantly fewer computational resources, making it suitable for resource-constrained devices.
 
-🎯 Objective
+ Objective :
 Enhance image clarity for degraded or blurred images.
 
 Achieve real-time performance (30–60 FPS) on 1080p resolution.
@@ -18,7 +18,7 @@ Maintain high perceptual quality with SSIM > 90%.
 
 Enable deployment in low-bandwidth environments like video conferencing.
 
-⚙️ Approach
+ Approach :
 Data Preparation
 
 High-resolution images from DIV2K dataset were downscaled using bicubic interpolation to simulate blur.
@@ -45,7 +45,7 @@ PSNR (Peak Signal-to-Noise Ratio)
 
 MOS (Mean Opinion Score from user studies)
 
-🛠 Tools and Technologies
+ Tools and Technologies :
 Programming Language: Python
 
 Framework: PyTorch
@@ -58,12 +58,12 @@ Libraries: TorchVision, NumPy, Pillow, Matplotlib, tqdm
 
 Dataset: DIV2K
 
-🏆 Key Achievements
+ Key Achievements:
 90%+ SSIM on multiple categories (text, nature, people, animals, games).
 
 Real-time inference on 1080p images.
 
 Significant reduction in model size and computational cost.
 
-📚 References
+ References :
 SwinIR: Image Restoration Using Swin Transformer
